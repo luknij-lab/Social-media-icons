@@ -1,0 +1,51 @@
+/* Top Bar */
+:root{
+  font-size: 16px;
+}
+.top-bar{
+        padding: 0.4rem 1.4rem; }
+.top-bar-cta{
+        flex: 1;
+        display: flex;
+        -ms-flex: 1;
+        display: -ms-flexbox;
+        flex-direction: row;
+        justify-content: flex-end; }
+@media screen and (min-width: 320px){
+        .top-bar-cta{
+                flex-direction: row;
+                justify-content: space-between; }
+}
+@media screen and (min-width: 480px){
+        .top-bar-cta{
+                justify-content: center;
+                gap: 0.8rem; }
+}
+@media screen and (min-width: 1024px){
+        .top-bar-cta{
+                justify-content: flex-end; }
+}
+.top-bar p{
+        color: var(--text-color); }
+.top-bar a{
+        display: grid; }
+.top-bar p,
+.top-bar a{
+        margin-bottom: 0; }
+.top-bar-contact{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.8rem; }
+.top-bar-contact p{
+        margin: 0; }
+.top-bar-contact p:last-child{
+        margin: 0 0 0 1rem; }
+.top-bar-contact a{
+        display: inline-block; }
+.top-bar-contact a:hover,
+.social-icon a:hover{
+        filter: brightness(1.2); }
+.social-icon{
+        display: flex; 
+        gap: 1rem; }
